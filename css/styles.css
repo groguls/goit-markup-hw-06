@@ -463,6 +463,10 @@ to underline an element on hover if the underline indicates the current page */
   background-color: var(--green-success-color);
 }
 
+.social-media {
+  margin-right: 80px;
+}
+
 /* --- Portfolio page --- */
 
 .examples {
