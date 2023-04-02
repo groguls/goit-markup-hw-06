@@ -467,7 +467,7 @@ to underline an element on hover if the underline indicates the current page */
 }
 
 .social-media {
-  margin-right: 80px;
+  margin-right: auto;
 }
 
 .footer-subscribe {
@@ -633,7 +633,6 @@ to underline an element on hover if the underline indicates the current page */
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  min-height: 576px;
   padding: 72px 24px 24px;
   background-color: var(--dairy-modal-color);
   border-radius: 4px;
@@ -695,7 +694,6 @@ to underline an element on hover if the underline indicates the current page */
 }
 
 .modal-box {
-  position: relative;
   margin-bottom: 8px;
 }
 
@@ -703,6 +701,10 @@ to underline an element on hover if the underline indicates the current page */
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.modal-wrap {
+  position: relative;
 }
 
 .modal-text {
@@ -713,7 +715,7 @@ to underline an element on hover if the underline indicates the current page */
 }
 
 .modal-input {
-  /* width: 360px; */
+  width: 360px;
   height: 40px;
   padding-left: 38px;
   color: var(--navyblue-dark-color);
@@ -725,12 +727,10 @@ to underline an element on hover if the underline indicates the current page */
 
 .modal-item {
   position: absolute;
-  top: 26px;
+  top: 50%;
   left: 16px;
-  display: block;
   fill: var(--navyblue-dark-color);
-  width: 18px;
-  height: 24px;
+  transform: translateY(-50%);
   transition: fill var(--animation-delay) var(--animation-func);
 }
 
@@ -751,6 +751,7 @@ to underline an element on hover if the underline indicates the current page */
 }
 
 .modal-agreement {
+  margin-top: 16px;
   margin-bottom: 24px;
 }
 
@@ -780,6 +781,10 @@ to underline an element on hover if the underline indicates the current page */
   border: 1px solid var(--navyblue-modal-color);
   border-radius: 2px;
   transition: border-color var(--animation-delay) var(--animation-func);
+}
+
+.checkbox-field > a {
+  color: var(--iris-brand-color);
 }
 
 .checkbox-img {
